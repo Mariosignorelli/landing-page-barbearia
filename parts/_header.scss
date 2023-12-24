@@ -26,4 +26,39 @@ i{
     to{
         transform: translateY(-8px) scale(1.1);
     }
+}.header-buttun{
+    border: solid 1px $white-normal;
+    padding: 8px 24px;
+    border-radius: 4px;
+    color: $white-normal;
+    background: transparent;
+    transition:  background-color 0.8s ;
+}.header-buttun:hover{
+    border: 1px solid $red-light;
+    background: $red-light;
+}.header-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+@media screen  and (max-width:768px){
+    .header-content{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        i{
+            margin-top: 20px;
+            font-size: 34px;
+        }
+    }
+    
+    .header-logo img{
+        width: 160px;
+        margin-top: 50px;
+    }
+    .header-buttun{
+        display: none;
+    }
 }

@@ -40,6 +40,135 @@ i {
     transform: translateY(-8px) scale(1.1);
   }
 }
+.header-buttun {
+  border: solid 1px #ffffff;
+  padding: 8px 24px;
+  border-radius: 4px;
+  color: #ffffff;
+  background: transparent;
+  transition: background-color 0.8s;
+}
+
+.header-buttun:hover {
+  border: 1px solid #d34040;
+  background: #d34040;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .header-content {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .header-content i {
+    margin-top: 20px;
+    font-size: 34px;
+  }
+  .header-logo img {
+    width: 160px;
+    margin-top: 50px;
+  }
+  .header-buttun {
+    display: none;
+  }
+}
+.container {
+  max-width: 1024;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* bg home*/
+.bg-home {
+  position: relative;
+}
+
+.bg-home::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("../assets/bg.svg");
+  background-image: linear-gradient(to botton, rgba(6, 18, 30, 0.1), #06121e);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  background-position: 50 0;
+}
+
+.hero {
+  color: #ffffff;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+}
+.hero h1 {
+  text-align: center;
+  line-height: 150%;
+  max-width: 940px;
+  font-size: 48px;
+}
+.hero p {
+  text-align: center;
+  margin: 14px 0;
+  font-size: 22px;
+}
+
+.button-contact {
+  padding: 14px 28px;
+  color: #ffffff;
+  background-color: #D94140;
+  border: 0;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 14px 0;
+}
+
+.button-contact:hover {
+  animation: scaleButton 0.8s alternate infinite;
+}
+
+@keyframes scaleButton {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.07);
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    min-height: 60vh;
+  }
+  h1 {
+    font-size: 34px;
+    padding: 0 14px;
+    width: 100%;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero h1 {
+    font-size: 24px;
+  }
+}
 body {
   background-color: #06121e;
 }
