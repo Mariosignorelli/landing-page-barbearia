@@ -1,7 +1,7 @@
 .container{
     max-width: 1024;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 20px;
 }
 /* bg home*/
 .bg-home{
@@ -20,7 +20,7 @@
     z-index: -1;
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0.9;
+    opacity: 0.7;
     background-position: 50 0;
 }
 //fim home-------------
@@ -82,5 +82,5 @@
     .hero h1{
         font-size: 24px;
     }
- 
 }
+//----------- fim hero
