@@ -280,6 +280,25 @@ i {
     flex-direction: column;
   }
 }
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 54px 0;
+  gap: 28px;
+  color: #ffffff;
+}
+.footer p {
+  text-align: justify;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 12px;
+  color: #ffffff;
+}
+
 body {
   background-color: #06121e;
 }
