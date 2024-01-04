@@ -1,2 +1,2 @@
 # landing-page-barbearia
-Longue Page de barbearia usando HTM CSS SAAS
+landing-page de barbearia usando HTM CSS SAAS
