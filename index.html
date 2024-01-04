@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- liks css-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <!-- liks fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!---script AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
 
     <title>Barber</title>
 </head>
@@ -17,21 +21,30 @@
 <div class="bg-home">
     <header>
         <nav class="header-content container">
-            <div class="header-icons">
+            <div class="header-icons" data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
                 <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
                 <a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a>
                 <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>
             </div>
-            <div class="header-logo">
-                <img src="./assets/logo.svg" alt="logo da barbearia">
+            <div class="header-logo" data-aos="fade-down" data-aos-delay="300"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
+                <img src="./assets/logo.svg" alt="logo da barbearia" data-aos="flip-right"
+                data-aos-delay="300"
+                data-aos-duration="1500">
             </div>
-            <div>
+            <div data-aos="fade-up"
+            data-aos-duration="3000">
                 <a href="https://wa.me/5511970447391?text=Agendar+hor%C3%A1rio" class="header-buttun" target="_blank">
                     Agendar horário
                 </a>
             </div>
         </nav>
-        <main class="hero container">
+        <main class="hero container" data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-duration="3000">
             <h1>ESTILO É UM REFLEXO DA SUA ATITUDE E SUA PERSONALIDADE.</h1>
             <p>Horário de funcionamento: 09:00 ás 19:00 </p>
             <a href="https://wa.me/5511970447391?text=Agendar+hor%C3%A1rio" class="button-contact "target="_blank">
@@ -41,13 +54,16 @@
     </header>
 </div>
 <!-- about-->
-<section class="about">
+<section class="about" data-aos="fade-right"
+data-aos-offset="300"
+data-aos-easing="ease-in-sine">
     <div class="continer about-content">
         <div class="about-img">
             <img src="./assets/images.svg" 
             alt=" imagens da barbearia">
         </div>
-        <div class="about-descrpition">
+        <div class="about-descrpition"  data-aos="fade-up"data-aos-offset="300"
+        data-aos-anchor-placement="bottom-bottom" data-aos-delay="600">
             <h2>SOBRE</h2>
             <p>Lorem ipsum dolor sit amet consectetur. Ornare eget pellentesque proin risus. Orci proin morbi vestibulum convallis leo vestibulum mus. Non duis augue eros mattis a quis sem sodales.</p>
             <p>Horário de funcionamento: <strong>09:00</strong>  ás <strong>19:00</strong></p>
@@ -59,7 +75,8 @@
         <h2>Serviços</h2>
         <p>Lorem ipsum dolor sit amet consectetur. Ornare eget pellentesque proin risus. Orci proin morbi vestibulum convallis leo vestibulum mus. Non duis augue eros mattis a quis sem sodales.</p>
     </div>
-    <section class="haircouts">
+    <section class="haircouts" data-aos="fade-left" data-aos-offset="300"
+    data-aos-easing="ease-in-sine" data-aos-delay="600">
         <div class="haircut">
             <img src="./assets/corte1.png" 
             alt="corte">
@@ -91,7 +108,8 @@
     <h2> Vennha nos visitar</h2>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.2482353159266!2d-46.41191732561973!3d-23.667079165482775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce6c2f73371d53%3A0xe7b53445db0df6ff!2sR.%20Jos%C3%A9%20Raimundo%20de%20Souza%2C%2021%20-%20Vila%20Real%2C%20Mau%C3%A1%20-%20SP%2C%2009334-040!5e0!3m2!1spt-BR!2sbr!4v1704293326701!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
-<footer class="footer">
+<footer class="footer" data-aos="flip-up"data-aos-delay="200"
+data-aos-duration="3000">
     <div class="footer-icons">
         <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
         <a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a>
@@ -107,6 +125,6 @@
     <img src="./assets/whatssapp.svg" alt="botão whatsaap--">
     <span class="tooltip-text">Agende seu horário</span>
 </a>
-
+<script src="./script.js"></script>
 </body>
 </html>
